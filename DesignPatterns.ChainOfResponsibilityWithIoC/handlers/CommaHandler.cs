@@ -10,6 +10,7 @@
                         .Where(n => !n.Contains(','))
                         .Concat(name.Where(n => n.Contains(','))
                         .SelectMany(n => n.Split(",")))
+                        .Select(n => n.Trim())
                         .ToList();
 
                 return $"Hello, {string.Join(", ", 

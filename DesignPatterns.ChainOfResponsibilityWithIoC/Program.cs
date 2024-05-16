@@ -6,4 +6,4 @@ var host = Container.CreateHost();
 
 var handler = host.Services.GetRequiredService<IHandler>();
 
-Console.WriteLine(handler.Greet("Pippo", "Poppi", "\"Michi, Carlo\""));
+Console.WriteLine(handler.Greet("Pippo", "Poppi", "Michi, Giobbe"));
