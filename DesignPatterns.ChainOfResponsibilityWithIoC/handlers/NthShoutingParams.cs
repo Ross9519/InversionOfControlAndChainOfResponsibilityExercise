@@ -19,7 +19,7 @@
                                     upperList
                                         .Where(n => n.All(char.IsUpper))
                                         .Select((n, index) => 
-                                            uCount > 1 && index == uCount - 1 ? $"and {n}" : n))}!";
+                                            uCount > 1 && index == uCount - 1 ? $"AND {n}" : n))}!";
             }
             return base.Greet(name);
         }
